@@ -1,0 +1,20 @@
+# Atomatically Generated Files
+# JetBrains IDEs
+.idea/
+*.iml
+
+# Eclipse related dir's/files
+.project
+.metadata
+.classpath
+.settings/
+.externalToolBuilders
+bin/
+tmp/
+.tern-project
+
+# Maven
+target
+
+# Mac OS
+*.DS_Store
