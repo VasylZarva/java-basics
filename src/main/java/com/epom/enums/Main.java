@@ -1,5 +1,7 @@
 package com.epom.enums;
 
+import java.util.Vector;
+
 /**
  * @author Vasyl Zarva.
  */
@@ -11,7 +13,6 @@ public class Main {
 
 
     private static void someLogic(final Month month) {
-
         switch (month) {
             case JANUARY:
                 System.out.println("some logic for JANUARY");
