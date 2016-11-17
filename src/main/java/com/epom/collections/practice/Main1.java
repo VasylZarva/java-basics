@@ -3,6 +3,8 @@ package com.epom.collections.practice;
 import com.epom.enums.Main;
 
 import java.util.*;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * @author Vasyl Zarva.
@@ -15,7 +17,7 @@ public class Main1 {
 
     public static void main(String[] args) {
         // convert array to list
-
+        Queue<Double> queueNew = new LinkedBlockingQueue<>();
         String[] array = new String[] {"a", "b", "c", "c", "b", "d", "a", "r"};
         List<String> listString = Arrays.asList(array);
 //        printCollection(listString);
