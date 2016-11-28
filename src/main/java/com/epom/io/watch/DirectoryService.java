@@ -8,9 +8,7 @@ import java.util.List;
  */
 public interface DirectoryService {
 
-	List<File> searchByName(String name);
-
-	List<File> searchByExtension(String extension);
+	List<File> search(File directory, NameFilter filter);
 
 	Long getDirectorySize(File directory, boolean recursive);
 
