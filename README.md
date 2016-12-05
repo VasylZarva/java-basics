@@ -1,0 +1,151 @@
+home work
+10
+
+
+
+
+——————————————————————
+
+9
+
+
+https://habrahabr.ru/post/60317/
+http://www.javatpoint.com/transient-keyword
+http://www.javatpoint.com/serialization-in-java
+http://ccfit.nsu.ru/~deviv/courses/oop/java_ser_rus.html
+http://www.javatutorialguide.com/core-java/tutorials/what-howto-java-externalization-example-program.php
+
+Практика
+1. Розібратись з прикладом серіалізації/десеріалізації, що проходили на занятті
+2. Написати програму, аналогічну тій, що на уроці, але для Externalizable  обєкта.
+
+
+——————————————————————
+
+8
+Почитати
+http://www3.ntu.edu.sg/home/ehchua/programming/java/j5b_io.html - тут все доступно, мабуть цього буде достатньо
+https://commons.apache.org/proper/commons-csv/user-guide.html (для домашнього завдання)
+Переглянути приклади, що я показував в завданні. Я вже закомітив. Вони ось тут com/epom/io
+Практика
+Написати програму з 2 методами. 1) генерує CSV файл з наступними хедерами (дата, імя, зарплата), записавши туди 5-10 рядків з рандомними данними; 2) читає CSV файл з заданим імям, парсить його та вираховує загальну сумму зарплат, яку потрібно виплатити.
+
+
+7
+——————————————————————
+
+
+Почитати
+http://www.quizful.net/post/java-fields-initialization (Хороший сайт. Багато тестів для перевірки знань)
+Рекурсія
+http://introcs.cs.princeton.edu/java/23recursion/ або
+http://www.toves.org/books/java/ch17-recur/index.html Вроді непогано написано. Там же є і приклади.
+http://introcs.cs.princeton.edu/java/23recursion/Queens.java.html
+http://www.java.achchuthan.org/2012/02/n-queens-problem-in-java.html
+
+Практика
+Ще раз розглянути com.epom.services.UserService. Написати свою реалізацію такого сервіса з, можливо, іншою реалізацією (for example BookService, StudentService, EmployerService). Написати коменти до всіх методів.
+
+Написати, використовуючи рекурсію, (або знайти в неті і розібратись ;)) реалізацію знаходження  а) factorial; б) fibonacci; в) permutations of a String;  г) n Quean problem.
+
+——————————————————————
+
+6
+http://www.codejava.net/java-core/collections/18-java-collections-and-generics-best-practices
+http://beginnersbook.com/java-collections-tutorials/
+
+Додатково до завдання закінчити всі завдання в com.epom.collections.practice.Task Написати свій чекед і анчекед ексепшн. Написати сервіс, що має два методи: перший парсить дабл число з стрінга, другий рахує кількість чисел в переданій йому стрінгі.
+а) додати перевірку вхідних параметрів. б) тровнути свій анчекед ексепшн для першого метода у разі спрацьовування NumberFormatException в) тровнути всій векед ексепшн, якщо в другому методі не виявилось числових символів. г) в основній програмі зловити обидва ексепшина і вивести валідний меседж, щоб програма далі могла продовжувати роботу. д) дописати finally блок і вивести в консоль меседж про спрацювання цього блока
+——————————————————————
+5
+Почитати
+http://beginnersbook.com/2014/09/java-enum-examples/
+https://www.dotnetperls.com/format-java
+додатково http://beginnersbook.com/2013/04/oops-concepts/
+
+Практика
+1. а) Створити енум Gender де буде 2 значення MALE i FEMALE. Для кожного з них визначити поля id, title які задаватимуться через конструктор і в яких будуть getter методи. Придумати один абстрактрий метод та перевизначити. б) Написати метод doHouseWork в Main що приймає собі як параметр енум Gender та через switch знає, яку роботу домашню роботу виконати: приготувати поїсти чи подивитись телевізор) По дефолту неха буде лежати на дивані); в) Створити в Main екземпляр Gender та вивести айдішку, тайт; г) В Main проітеритись по значенням Gender.values() і викликати для кожного з значень ваш абстрактний метод.
+2. Написати свої аналоги прикладів, що наведені тут https://www.dotnetperls.com/format-java
+——————————————————————
+4
+instanceOf
+
+Почитати:
+http://www.javatpoint.com/java-string http://www.javapractices.com/topic/TopicAction.do?Id=62
+http://mathbits.com/MathBits/Java/arrays/Bubble.htm
+https://www.dotnetperls.com/format-java
+
+1. а) Задати двомірний числовий масив 5х5 використовуючи генератор Random (числа від -100 до 100). Відсортувати його методом бульбашки. Вивести в консоль використовуючи окремий метод (Так як це двомірний масив, то постарайтесь вивести елементи коженого діменшна в один ряд, а не кожен окремий елемент з нового рядка). б) використайте для сортування  числового масива Arrays.sort(). Виведіть результат. в) згенеруйте, відсортуйте(методом бульбашки) і виведіть строковий масив 3х3. Для генерації випадкової строчки використайте UUID.randomUUID(). (для сортування в стрінгі є метод str1.compareTo(str2)) г) використайте для сортування строкового масива  Arrays.sort(). Виведіть результат.
+2. Написати утилітний клас StringTester і реалізувати для нього наступні методи: а) isEmpty(String str) перевірка чи вхідна строка пуста або в значенні null; б) reverse(String str)  поміняти порядок символів в строкі; в) removeWhiteSpaces(String str) видалити пробіли з заданої строчки. г) countOccurrences(String source, String toFind) знайти скільки разів toFind зустрічається в даному source.
+3. Використати метод String.format для підстановки в задану стрінгу-темплейт всих типів примітивів, календаря з заданою датою 10.11.2016 (коказати окремо повністю дату + вивести лише число і місяць + окремо години й хвилини)
+
+——————————————————————
+3
+Цього разу читати даю лише на повторення
+http://www.javatpoint.com/java-naming-conventions
+http://www.javatpoint.com/difference-between-abstract-class-and-interface
+http://www.javatpoint.com/final-keyword
+http://www.javatpoint.com/recursion-in-java (опціонально)
++  прочитайте ще раз ті пункти, що ви не зрозуміли з минулого заняття.
+
+Практика:
+1. Написати 2 калькулятора: базовий і науковий. Базовий калькулятор повинен вміти виконувати операції додавання, віднімання, множення і ділення. Науковий клькулятор повинен вміти, окрім попередніх дій, має вміти піднести число N в степінь Y, порахувати sin i cos (Не придумуйте заново велосипед і використайте для обчислень всередині калькулятора джавішну бібліотеку Math)
+2. Вивести в консоль наступне: 1) кількість вихідних днів(субота і неділя) окремо для кожного місяця 2017 року; 2) загальну кількість днів для кожного місяця 2017 року; 3) скільки днів залишилось від поточної дати до нового року; 4) показати (окремо) поточну хвилину/годину/день/місяць/рік (Це завдання робиться з допогомогою класу Calendar. Частково завдання можна зробити з прикладів, що ми розгдядали на занятті, все інше - потрібно розібратись які методи є в Calendar і чуток подумати)
+
+Практичне заняття обовязково для виконання. Нагадую, що я створив чат і всі питання відносно дз можна писати туди, або в лс.
+——————————————————————
+
+2
+OOP Consepts
+http://www.javatpoint.com/java-oops-concepts  прочитати в ось цьому розділі наступні пункти:
+Java Naming conventions
+Object and Class
+Method Overloading
+Constructor in Java
+static keyword
+this keyword
+super keyword
+Final Keyword
+Method Overloading
+Method Overriding
+Abstract class
+Interface
+Difference between abstract class and interface
+Access Modifiers
+Difference between object and class
+Inheritance, Encapsulation
+
+або ось тут (читайте в першу чергу те, що ми проходимо на занятті)
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/index.html
+https://docs.oracle.com/javase/tutorial/java/concepts/index.html
+https://docs.oracle.com/javase/tutorial/java/javaOO/index.html
+https://docs.oracle.com/javase/tutorial/java/IandI/index.html
+
+
+Репозиторій на гітхабі, де можна скачати приклади, які я роблю на занятті
+https://github.com/VasylZarva/java-basics.git
+
+Практика:
+1. Побудувати 3 класа (базовий і 2 потомка), що описують працівників з погодинною оплатою (перший потомок) і фіксованою (інший). В базовому класі зробити абстрактний метод для розрахунку середньомісячної зарплати. Формула для погодинної оплати: середня зп = 22 * 8 * погодинна ставка, для фіксованої оплати: середня зп = фіксована місячна оплата. Продумати спільні поля, які можуть бути в обох працівників, та ті, які будуть відрізнятися. В головній програмі створити по 3 екзепмляри працівників обох потомків з різними іменами і зп і вивести через system.out.println . Перевизначити метод toString. Написати для них як мінімум по 2 конструктора. Використати модифікатор final. (інтерфейс не створювати)
+2. Кому мало: Побудувати базовий клас фігура, і для нього потомків - прямокутник, трикутник, круг. Написати для них інтерфейс, задати як мінімум одну поведінку draw() і countSquare(). Реалізувати їх в кожному з потомків. В головній програмі створити по одному інстансу потомка і викликати інтерфейсні методи.
+
+==================================
+1
+
+Основна і найбільш повний туторіал знаходиться на офіційному сайті https://docs.oracle.com/javase/tutorial/ . Там все розписано, але для починаючих може бути трохи складно.
+Ось посилання на ті теми, що ми розглянули:
+
+A Closer Look at the "Hello World!" Application
+https://docs.oracle.com/javase/tutorial/getStarted/application/index.html
+Primitive Data Types
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
+Arrays
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html
+Control Flow Statements: Swich
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html
+Summary of Control Flow Statements
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/flowsummary.html
+Objects
+https://docs.oracle.com/javase/tutorial/java/javaOO/objects.html
+
+Якщо більш просто, то ось дуже хороший сайт знайшов http://www.javatpoint.com/java-tutorial. Тут все ще доступніше, ніж на оракловському, але не так повно розкрита інформація. Тут можете пройтись по розділу Basics of Java + static keyword -> http://www.javatpoint.com/static-keyword-in-java
