@@ -9,6 +9,7 @@ public class Employer implements MyInterface, Serializable {
 
 	private static final long serialVersionUID = 8572111019991541039L;
 
+	private long id;
 	private String firstName;
 	private String lastName;
 	private int age;
@@ -17,6 +18,15 @@ public class Employer implements MyInterface, Serializable {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.age = age;
+	}
+
+	@Override
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
 	}
 
 	public String getFirstName() {

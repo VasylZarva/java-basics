@@ -1,7 +1,9 @@
 package com.epom.generics.test;
 
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.epom.generics.Employer;
 
@@ -32,6 +34,9 @@ public class MyApplication {
 
 		Number num = PrinterUtil.getFirstFromCollection(numberContentPrinter.getContent());
 		System.out.println("First : " + num);
+
+		Map<Integer, Employer> map = new HashMap<>();
+		PrinterUtil.addToMap(new Employer("Vasyl", "Zarva", 28), map);
 
 	}
 

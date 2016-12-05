@@ -9,12 +9,9 @@ import java.util.List;
  */
 public class GenericMain {
 
-	public static void main(String[] args) {
-//		List<?> numList = new ArrayList<Integer>();
-//		numList = new ArrayList<String>();
+	public static void main(String[] args) throws InstantiationException, IllegalAccessException {
 
-//		List<? extends Number> numList = new ArrayList<Integer>();
-//		numList = new ArrayList<String>();
+		Employer employer = read(Employer.class, "Select first_name, last_name from employer");
 	}
 
 	public static <T> T addToCollection(T element, Collection<T> collection) {
