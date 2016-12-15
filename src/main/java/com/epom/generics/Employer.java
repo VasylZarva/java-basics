@@ -21,7 +21,7 @@ public class Employer implements MyInterface, Serializable {
 	}
 
 	@Override
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 

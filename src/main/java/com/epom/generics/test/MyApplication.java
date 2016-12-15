@@ -35,7 +35,7 @@ public class MyApplication {
 		Number num = PrinterUtil.getFirstFromCollection(numberContentPrinter.getContent());
 		System.out.println("First : " + num);
 
-		Map<Integer, Employer> map = new HashMap<>();
+		Map<Long, Employer> map = new HashMap<>();
 		PrinterUtil.addToMap(new Employer("Vasyl", "Zarva", 28), map);
 
 	}
