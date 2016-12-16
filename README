@@ -1,4 +1,20 @@
 home work
+
+11
+
+Почитати
+http://www.javatpoint.com/multithreading-in-java (Починаючи з "Multithreading in Java" і закінчуючи "Daemon Thread in Java")
+https://blogs.oracle.com/CoreJavaTechTips/entry/get_netbeans_6
+http://javarevisited.blogspot.com/2015/06/how-to-use-callable-and-future-in-java.html
+
+Практика
+Розібратись з всіма прикладами, що закомічені ось тут com.epom.concurrent.main.CMain
+Написати свою імплементацію тредів (використовуючи Thread, Runnable, Callable) запустити і в консолі показати результат запуску.
+
+
+——————————————————————
+
+
 10
 
 Почитати
